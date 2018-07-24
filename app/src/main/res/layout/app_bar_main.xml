@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="com.id.drapp.patientsListActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <com.mancj.materialsearchbar.MaterialSearchBar
+            style="@style/MaterialSearchBarLight"
+            app:mt_speechMode="false"
+            app:mt_hint="Search"
+            android:visibility="gone"
+            app:mt_maxSuggestionsCount="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchBar" />
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:elevation="0dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+        <android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/CategoryTab"
+            android:background="@color/actionBar"
+            android:id="@+id/tabsLayout"/>
+
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/pager"/>
+
+    <ListView
+        android:id="@+id/patientSearchList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+
+    </LinearLayout>

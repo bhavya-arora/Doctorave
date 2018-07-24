@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+    <TextView
+        android:id="@+id/fillFormView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/actionBar"
+        android:text="Fill The Form"/>
+
+    <LinearLayout
+        android:layout_below="@+id/fillFormView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_alignParentLeft="true"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/patientFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full Name"
+                android:textSize="18sp"/>
+            <EditText
+                android:id="@+id/patientProblem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Problem(fever...)"
+                android:textSize="18sp"/>
+            <EditText
+                android:id="@+id/patientAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_alignParentRight="true">
+            <EditText
+                android:id="@+id/patientDob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date Of Birth(dd/mm/yyyy)"
+                android:textSize="18sp"/>
+            <EditText
+                android:id="@+id/patientEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email Id"
+                android:textSize="18sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/bookAppointment"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shadowlightgreen"
+                    android:textColor="@android:color/white"
+                    android:text="Book"
+                    android:fontFamily="sans-serif-smallcaps"/>
+                <Button
+                    android:id="@+id/cancelAppointment"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/shadowlightgreen"
+                    android:text="Cancel"
+                    android:fontFamily="sans-serif-smallcaps"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

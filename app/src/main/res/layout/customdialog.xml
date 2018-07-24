@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/actionBar"
+            android:text="Fill The Form"/>
+
+        <EditText
+            android:id="@+id/patientFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/patientProblem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Problem(fever...)"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/patientAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/patientEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email Id"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/patientDob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date Of Birth(dd/mm/yyyy)"
+            android:textSize="18sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/bookAppointment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shadowlightgreen"
+                android:textColor="@android:color/white"
+                android:text="Book"
+                android:fontFamily="sans-serif-smallcaps"/>
+            <Button
+                android:id="@+id/cancelAppointment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:background="@drawable/shadowlightgreen"
+                android:text="Cancel"
+                android:fontFamily="sans-serif-smallcaps"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/loginCream"
+    tools:context=".patientOrDoctorActivity">
+
+    <TextView
+        android:id="@+id/whoAreYou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="28dp"
+        android:elevation="2dp"
+        android:text="Are You "
+        android:textColor="@color/lightgreen"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline1"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/areYouDoctor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/shadowlightgreen"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Doctor"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/whoAreYou"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toStartOf="@+id/whoAreYou"
+        app:layout_constraintTop_toBottomOf="@+id/whoAreYou" />
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="OR"
+        android:textColor="@color/lightgreen"
+        app:layout_constraintEnd_toEndOf="@+id/areYouDoctor"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="@+id/areYouDoctor"
+        app:layout_constraintTop_toBottomOf="@+id/areYouDoctor" />
+
+    <Button
+        android:id="@+id/areYouPatient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/shadowdarkgreen"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Patient"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/or"
+        app:layout_constraintStart_toStartOf="@+id/or"
+        app:layout_constraintTop_toBottomOf="@+id/or" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline1"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+
+</android.support.constraint.ConstraintLayout>

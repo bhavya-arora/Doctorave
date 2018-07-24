@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.id.drapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:noHistory="true" />
+        <activity
+            android:name=".createAccount"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme1">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".loginActivity"
+            android:noHistory="true"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme1">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".createAccount2Activity"
+            android:parentActivityName=".createAccount"
+            android:theme="@style/AppTheme1">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".createAccount" />
+        </activity>
+        <activity
+            android:name=".patientsActivity"
+            android:label="@string/title_activity_patients"
+            android:theme="@style/AppTheme1" />
+        <activity
+            android:name=".patientsListActivity"
+            android:theme="@style/AppTheme2" />
+        <activity android:name=".secondTabActivity" />
+        <activity
+            android:name=".addPatientActivity"
+            android:parentActivityName=".patientsActivity"
+            android:theme="@style/AppTheme1">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".patientsActivity" />
+        </activity>
+
+        <provider
+            android:name=".patientProvider"
+            android:authorities="com.id.drapp"
+            android:exported="false" />
+
+        <activity
+            android:name=".detailActivity"
+            android:parentActivityName=".patientsActivity"
+            android:theme="@style/AppTheme1">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".patientsActivity" />
+        </activity>
+
+        <service
+            android:name=".patientIntentService"
+            android:exported="false" />
+        <service
+            android:name=".notificationIntentService"
+            android:exported="false" />
+
+        <activity
+            android:name=".patientOrDoctorActivity"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".hospitalActivity"
+            android:theme="@style/AppTheme2" />
+        <activity android:name=".hospitalListActivity" />
+        <activity android:name=".patientAppointmentsActivity" />
+        <activity
+            android:name=".hospitalDetailActivity"
+            android:parentActivityName=".hospitalActivity"
+            android:theme="@style/AppTheme1">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".hospitalActivity" />
+        </activity>
+        <activity
+            android:name=".verifyPatient"
+            android:parentActivityName=".patientOrDoctorActivity"
+            android:theme="@style/AppTheme2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".patientOrDoctorActivity" />
+        </activity>
+        <activity
+            android:name=".verifyPatient2"
+            android:theme="@style/AppTheme2"></activity>
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".settingsActivity"
+            android:parentActivityName=".patientsListActivity"
+            android:theme="@style/AppTheme1">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".patientsListActivity"/>
+        </activity>
+    </application>
+
+</manifest>

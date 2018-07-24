@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:elevation="2dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@+id/patientAvatar"
+        android:layout_width="70dp"
+        android:layout_height="90dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/userplaceholder" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_toRightOf="@+id/patientAvatar"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/patientName"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:textStyle="normal"
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:hint="Sanjay Kumar"/>
+        <TextView
+            android:id="@+id/patientAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/album_title"
+            android:hint="Sanjay Kumar"/>
+        <TextView
+            android:id="@+id/patientAge"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/album_title"
+            android:hint="12"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

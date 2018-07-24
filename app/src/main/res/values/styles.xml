@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/actionBar</item>
+    </style>
+
+    <style name="AppTheme1" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/actionBar</item>
+        <item name="colorPrimaryDark">@color/actionBar</item>
+        <item name="colorAccent">@color/actionBar</item>
+    </style>
+
+    <!--for patientsListActivity-->
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/actionBar</item>
+        <item name="colorPrimaryDark">@color/actionBar</item>
+        <item name="colorAccent">@color/actionBar</item>
+    </style>
+    <style name="AppTheme3" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Style for a tab that displays a category name -->
+    <style name="CategoryTab" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@android:color/white</item>
+        <item name="tabSelectedTextColor">@android:color/white</item>
+        <item name="tabTextAppearance">@style/CategoryTabTextAppearance</item>
+    </style>
+
+    <!-- Text appearance style for a category tab -->
+    <style name="CategoryTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">#A8A19E</item>
+    </style>
+
+    <style name="AppTheme.Dark.Dialog" parent="ThemeOverlay.AppCompat.Dialog">
+
+        <item name="windowActionBar">true</item>
+        <item name="colorAccent">@android:color/white</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:dialogLayout">@color/colorPrimary</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@color/actionBar</item>
+    </style>
+
+</resources>

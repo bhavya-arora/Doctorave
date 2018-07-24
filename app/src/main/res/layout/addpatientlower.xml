@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/loginCream">
+
+        <EditText
+            android:id="@+id/patientName"
+            android:layout_width="270dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_perm_identity_black_24dp"
+            android:drawableLeft="@drawable/ic_perm_identity_black_24dp"
+            android:hint="Bhavya Arora"
+            android:textColorHint="@android:color/darker_gray"
+            android:inputType="text"/>
+        <EditText
+            android:id="@+id/patientphno"
+            android:layout_width="270dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_phone_black_24dp"
+            android:drawableLeft="@drawable/ic_phone_black_24dp"
+            android:hint="(650)555-1234"
+            android:textColorHint="@android:color/darker_gray"
+            android:inputType="phone"/>
+        <EditText
+            android:id="@+id/patientEmail"
+            android:layout_width="270dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_email_black_24dp"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:hint="gobhavyaarora15@gmail.com"
+            android:textColorHint="@android:color/darker_gray"
+            android:inputType="textWebEmailAddress"/>
+        <EditText
+            android:id="@+id/patientDob"
+            android:layout_width="270dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_date_range_black_24dp"
+            android:drawableLeft="@drawable/ic_date_range_black_24dp"
+            android:hint="Birth-Date DD/MM/YYYY"
+            android:textColorHint="@android:color/darker_gray"
+            android:inputType="date"/>
+        <EditText
+            android:id="@+id/patientAdd"
+            android:layout_width="270dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_location_on_black_24dp"
+            android:drawableLeft="@drawable/ic_location_on_black_24dp"
+            android:hint="Home Address"
+            android:textColorHint="@android:color/darker_gray"
+            android:inputType="textPostalAddress"/>
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="270dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+                <RadioButton
+                    android:id="@+id/maleRadio"
+                    android:layout_width="wrap_content"
+                    android:text="Male"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/actionBar"
+                    android:onClick="onRadioClicked"/>
+                <RadioButton
+                    android:id="@+id/femaleRadio"
+                    android:layout_width="wrap_content"
+                    android:text="Female"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/actionBar"
+                    android:onClick="onRadioClicked"
+                    android:layout_height="wrap_content"/>
+        </RadioGroup>
+        <Button
+            android:onClick="onSaveClick"
+            android:layout_width="270dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-smallcaps"
+            android:background="@drawable/shadowlightgreen"
+            android:text="Save Patient"
+            android:layout_marginBottom="15dp"/>
+
+    </LinearLayout>
+</RelativeLayout>

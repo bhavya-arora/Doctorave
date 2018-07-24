@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Doctorave</string>
+    <string name="privacyterms">Privacy &amp; Terms</string>
+    <string name="createAccount">Create Account</string>
+    <string name="title_activity_patients">patientsActivity</string>
+    <string name="navigation_drawer_open">Open Navigation</string>
+    <string name="navigation_drawer_close">Close Navigation</string>
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/loginCream"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/doctorTitle"
+            android:layout_width="270dp"
+            android:layout_height="0dp"
+            android:drawableStart="@drawable/ic_perm_identity_black_24dp"
+            android:drawableLeft="@drawable/ic_perm_identity_black_24dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:id="@+id/hospitalName"
+            android:layout_width="270dp"
+            android:layout_height="0dp"
+            android:drawableStart="@drawable/ic_local_hospital_black_24dp"
+            android:drawableLeft="@drawable/ic_local_hospital_black_24dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/hospitalAddress"
+            android:layout_width="270dp"
+            android:layout_height="0dp"
+            android:drawableStart="@drawable/ic_location_on_black_24dp"
+            android:drawableLeft="@drawable/ic_location_on_black_24dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/doctorPhone"
+            android:layout_width="270dp"
+            android:layout_height="0dp"
+            android:paddingRight="10dp"
+            android:drawableStart="@drawable/ic_phone_black_24dp"
+            android:drawableLeft="@drawable/ic_phone_black_24dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/getAppointment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="3dp"
+                android:textSize="18sp"
+                android:background="@drawable/shadowlightgreen"
+                android:text="Get Appointment"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
